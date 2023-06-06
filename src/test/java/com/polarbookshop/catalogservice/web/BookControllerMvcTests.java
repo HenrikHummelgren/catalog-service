@@ -37,7 +37,7 @@ class BookControllerMvcTests {
 
     @Test
     void whenBookAlreadyExistingThenShouldReturn422() throws Exception {
-        Book oldBook = new Book(
+        Book oldBook = Book.of(
                 "73737313940",
                 "Koryfeerna",
                 "Lena Andersson",

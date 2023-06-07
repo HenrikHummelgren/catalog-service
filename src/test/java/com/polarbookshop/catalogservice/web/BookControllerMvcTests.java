@@ -41,7 +41,8 @@ class BookControllerMvcTests {
                 "73737313940",
                 "Koryfeerna",
                 "Lena Andersson",
-                125.00);
+                125.00,
+                "Arktis Förlag");
         given(bookService.addBookToCatalog(oldBook)).willThrow(BookAlreadyExistsException.class);
         mockMvc
                 .perform(post("/books/" + oldBook))
